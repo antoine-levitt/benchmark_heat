@@ -16,3 +16,16 @@ function heat(t,D,v,Nx,Nt)
     end
     return u
 end
+
+Nx = 1_000
+Nt = 1_000_000
+D = 1.14
+v = .85
+t = 0.1
+
+@time heat(t,D,v,Nx,Nt)
+@time heat(t,D,v,Nx,Nt)
+@time heat(t,D,v,Nx,Nt)
+@time heat(t,D,v,Nx,Nt)
+@time heat(t,D,v,Nx,Nt)
+nothing
